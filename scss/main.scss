@@ -34,18 +34,14 @@ img {
 }
 
 // Logo
-
 #logo {
   width: 70px;
   height: 70px;
-  font-family: "Allura";
-  font-size: 3.5rem;
   color: #fff;
   text-transform: uppercase;
 }
 
 // Main Nav
-
 #main-nav {
   display: flex;
   justify-content: space-between;
@@ -78,7 +74,6 @@ img {
 }
 
 // Header
-
 #header {
   // Header Home
   &-home {
@@ -98,6 +93,7 @@ img {
     }
   }
 
+  // Header Inner
   &-inner {
     background: $bg-image no-repeat 20% 30% / cover;
     height: 5.5rem;
@@ -106,9 +102,8 @@ img {
 }
 
 // Home Sections
-
 #home {
-  // Home Section a
+  // Home Section A
   &-a {
     .specials {
       margin-top: 3rem;
@@ -123,8 +118,7 @@ img {
     }
   }
 
-  //   Home Section b
-
+  // Home Section B
   &-b {
     .stats {
       display: grid;
@@ -142,12 +136,14 @@ img {
           font-weight: bold;
         }
       }
+
       div {
         padding: 3rem 0;
 
         &:nth-child(odd) {
           background: $light-color;
         }
+
         &:nth-child(even) {
           background: $medium-color;
         }
@@ -156,7 +152,6 @@ img {
   }
 
   // Home Section C
-
   &-c {
     .process {
       display: grid;
@@ -164,6 +159,7 @@ img {
       grid-gap: 1.5rem;
       text-align: center;
 
+      // process-step
       &-step {
         position: absolute;
         top: 0;
@@ -179,6 +175,7 @@ img {
         transition: all 1s;
       }
 
+      // process-icon
       &-icon {
         border-radius: 50%;
         background: $dark-color;
@@ -208,10 +205,9 @@ img {
 }
 
 // About Sections
-
 #about {
+  // About A
   &-a {
-    //   About A
     .about-info {
       display: grid;
       grid-template-areas:
@@ -221,10 +217,10 @@ img {
     }
 
     // Grid Area
-
     .bio-image {
       grid-area: bioimage;
     }
+
     .bio {
       grid-area: bio;
       border-left: 3px solid $main-color;
@@ -251,7 +247,6 @@ img {
     }
   }
   // About B
-
   &-b {
     .progress {
       overflow: hidden;
@@ -269,7 +264,6 @@ img {
     }
   }
   // About C
-
   &-c {
     .about-logos {
       display: grid;
@@ -281,8 +275,7 @@ img {
       }
     }
   }
-  //   About D
-
+  // About D
   &-d {
     .testimonials {
       display: grid;
@@ -301,6 +294,7 @@ img {
         border-radius: 5px;
         padding: 0.5rem;
       }
+
       img {
         width: 50px;
         height: 50px;
@@ -312,7 +306,6 @@ img {
 }
 
 // Contact Page
-
 #contact {
   &-a {
     .text-fields {
@@ -325,7 +318,6 @@ img {
       margin-bottom: 1.2rem;
 
       // Grid Areas
-
       .name-input {
         grid-area: name;
       }
@@ -364,13 +356,12 @@ img {
   &-c {
     h1 {
       text-align: center;
-      font-size: 4remß;
+      font-size: 4rem;
     }
   }
 }
 
 // Footer
-
 #main-footer {
   background: $dark-color;
   color: #fff;
@@ -398,3 +389,6 @@ img {
     }
   }
 }
+
+// Import Media Queries
+@import "media";
